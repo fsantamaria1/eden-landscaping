@@ -1,3 +1,17 @@
+:root {
+    --primary-green: #2a5d45;
+    --secondary-beige: #f4f1ea;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
 /* Header Styling */
 
 .parallax-header {
@@ -19,3 +33,4 @@ footer .nav-link:hover {
     object-fit: cover;
     height: 350px;
 }
+
