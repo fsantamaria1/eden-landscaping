@@ -34,3 +34,18 @@ footer .nav-link:hover {
     height: 350px;
 }
 
+
+.btn-success {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    padding: 1rem 2rem;
+}
+
+.btn-success:hover {
+    background-color: #1f4734;
+    border-color: #1f4734;
+}
+
+#contact .form-control {
+    border: 2px solid var(--primary-green);
+}

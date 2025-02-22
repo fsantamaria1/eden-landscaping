@@ -144,24 +144,34 @@
         </div>
     </section>
 
-    <section class="py-5 bg-secondary" id="contact">
+    <!-- Contact Section -->
+    <section class="py-6 bg-success bg-opacity-10" id="contact">
         <div class="container">
-            <h2 class="text-center">Contact Us</h2>
-            <form action="#" method="POST" class="mt-4">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" name="name" id="name" required />
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold text-center mb-5">Contact Us</h2>
+                    <form action="#" method="POST" class="p-4 p-md-5 bg-white rounded-3">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control form-control-lg" name="name" id="name" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control form-control-lg" name="email" id="email" required />
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control form-control-lg" name="message" id="message" rows="4" required></textarea>
+                            </div>
+                            <div class="col-12 text-center mt4">
+                                <button type="submit" class="btn btn-success btn-lg px-5 py-3">Send Message</button>
+                            </div>
+                            
+                        </div>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" name="email" id="email" required />
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
