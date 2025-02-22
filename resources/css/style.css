@@ -13,3 +13,9 @@
 footer .nav-link:hover {
     color: #ddd !important;
 }
+
+
+#services img {
+    object-fit: cover;
+    height: 350px;
+}
