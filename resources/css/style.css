@@ -84,3 +84,9 @@ h1, h2, h3, .navbar-brand {
 footer .nav-link:hover {
     color: #ddd !important;
 }
+
+.btn-outline-success {
+    padding-top: 0.75rem; 
+    padding-bottom: 0.75rem;
+    border-width: 2px;
+}
