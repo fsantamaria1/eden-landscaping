@@ -127,6 +127,15 @@ footer .nav-link:hover {
 .carousel-control-next {
     z-index: 2;
     width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
 }
 
 .carousel-control-prev-icon,
@@ -135,7 +144,16 @@ footer .nav-link:hover {
     padding: 1.5rem;
     border-radius: 50%;
     background-size: 60%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #1f4734;
+    transform: scale(1.1);
+}
+
 
 .carousel-indicators [data-bs-target] {
     width: 10px;
@@ -157,9 +175,19 @@ footer .nav-link:hover {
     .carousel-item img {
         height: 50vh;
     }
+
+    .carousel-control-prev {
+        left: 10px;
+    }
+    
+    .carousel-control-next {
+        right: 10px;
+    }
     
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        padding: 1rem;
+        padding: 0.8rem;
+        width: 35px;
+        height: 35px;
     }
 }
