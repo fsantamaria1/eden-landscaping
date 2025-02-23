@@ -127,7 +127,7 @@ footer .nav-link:hover {
 .carousel-control-next {
     z-index: 2;
     width: 5%;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .carousel-control-prev {
@@ -177,16 +177,16 @@ footer .nav-link:hover {
     }
 
     .carousel-control-prev {
-        left: 10px;
+        left: 20px;
     }
     
     .carousel-control-next {
-        right: 10px;
+        right: 20px;
     }
     
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        padding: 0.8rem;
+        padding: rem;
         width: 35px;
         height: 35px;
     }
