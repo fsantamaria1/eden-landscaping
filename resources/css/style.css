@@ -195,3 +195,9 @@ footer .nav-link:hover {
 .hidden-field {
     display: none;
 }
+
+#contact .vr {
+    width: 2px;
+    background-color: var(--primary-green);
+    opacity: 0.25;
+}
