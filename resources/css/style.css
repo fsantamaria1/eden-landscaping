@@ -1,0 +1,203 @@
+:root {
+    --primary-green: #2a5d45;
+    --secondary-beige: #f4f1ea;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+.parallax-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/bungalow.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: -97px;
+    padding-top: 97px;
+}
+
+.py-6 {
+    padding: 6rem 0;
+}
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: var(--primary-green) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    padding: 1rem 2rem;
+}
+
+.btn-success:hover {
+    background-color: #1f4734;
+    border-color: #1f4734;
+}
+
+#contact .form-control {
+    border: 2px solid var(--primary-green);
+}
+
+@media (max-width: 768px) {
+    .parallax-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .py-6 {
+        padding: 4rem 0;
+    }
+}
+
+footer .nav-link:hover {
+    color: #ddd !important;
+}
+
+.btn-outline-success {
+    padding-top: 0.75rem; 
+    padding-bottom: 0.75rem;
+    border-width: 2px;
+}
+
+#galleryCarousel {
+    height: 70vh;
+    background: rgba(0,0,0,0.8);
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    transition: transform 1s ease;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Overlay for images: higher last number = darker overlay */
+    background: rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+    filter: brightness(0.9);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 2;
+    width: 5%;
+    opacity: 0.5;
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-green);
+    padding: 1.5rem;
+    border-radius: 50%;
+    background-size: 60%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #1f4734;
+    transform: scale(1.1);
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background: var(--primary-green);
+    border-color: var(--primary-green);
+    transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+    #galleryCarousel,
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    .carousel-control-prev {
+        left: 20px;
+    }
+    
+    .carousel-control-next {
+        right: 20px;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: rem;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.hidden-field {
+    display: none;
+}
+
+#contact .vr {
+    width: 2px;
+    background-color: var(--primary-green);
+    opacity: 0.25;
+}

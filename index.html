@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Eden's Landscaping and Gardening</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-success shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand fs-3 fw-bold">Eden's Landscaping</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#about-us" class="nav-link">About us</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero header -->
+    <header class="parallax-header d-flex align-items-center" id="header">
+        <div class="container text-white text-center position-relative">
+            <h1 class="display-4 fw-bold mb-4">Transform Your Outdoor Space</h1>
+            <p class="lead mb-5">Professional landscaping services with 15+ years of experience</p>
+            <a href="#contact" class="btn btn-light btn-lg px-5 py-3 rounded-pill fs-5">Get Free Estimate</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-6" id="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <img src="resources/img/about.jpg" alt="Our Team" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4 text-center">About Our Company</h2>
+                    <p class="lead text-muted">Since 2008, Eden's Landscaping has been creating breathtaking outdoor environments across the Indianapolis area. Our team combines years of experience with artistic vision to bring your landscape dreams to life.</p>
+                    <div class="d-grid gap-3 d-sm-flex mt-5">
+                        <a href="#services" class="btn btn-success btn-lg px-4">Our Services</a>
+                        <a href="#contact" class="btn btn-outline-success btn-lg px-4">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light mt-5" id="services">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4 text-center">Our Services</h2>
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-6 pb-4">
+                    <div class="card p-3 border-success h-100">
+                        <img src="resources/img/lawn_and_bed_maintenance.JPG" alt="Lawn Mower Image" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Lawn and Bed Maintenance</h4>
+                            <p class="card-text">Expert care for your yard. Ask about our bi-weekly maintenance visits to keep your yard always looking clean!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 pb-4">
+                    <div class="card p-3 border-success h-100">
+                        <img src="resources/img/tree-trimming.jpg" alt="Lawn Mower Image" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Tree Removal and Trimming</h4>
+                            <p class="card-text">Comprehensive professional tree care services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 pb-4">
+                    <div class="card p-3 border-success h-100">
+                        <img src="resources/img/hardscaping.jpg" alt="Lawn Mower Image" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Hardscape and Landscape Design</h4>
+                            <p class="card-text">Custom patios, retaining walls, and beautiful trees and perennials to enhance your outdoor space.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 pb-4">
+                    <div class="card p-3 border-success h-100">
+                        <img src="resources/img/landscape_lighting.jpg" alt="Lawn Mower Image" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Landscape Lighting</h4>
+                            <p class="card-text">Professional illumination for pathways, accents around your yard, and home.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 pb-4">
+                    <div class="card p-3 border-success h-100">
+                        <img src="resources/img/christmas_lighting.PNG" alt="Lawn Mower Image" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Christmas Lighting</h4>
+                            <p class="card-text">Professional installation and removal of stunning holiday lighting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Services List -->
+            <div class="mt-4 pt-4">
+                <h3 class="text-center mb-4 h2 fw-bold">Comprehensive Service List</h3>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 col-sm-6">
+                        <div class="p-3 bg-white rounded-3 shadow-sm h-100">
+                            <h4 class="h5 text-success mb-3">Landscaping & Construction</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ Sod Installation</li>
+                                <li class="mb-2">✓ Retaining Walls</li>
+                                <li class="mb-2">✓ Pergolas & Fences</li>
+                                <li class="mb-2">✓ Fire Pit Installation</li>
+                                <li class="mb-2">✓ Concrete Work</li>
+                                <li class="mb-2">✓ Permanent Lighting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-sm-6">
+                        <div class="p-3 bg-white rounded-3 shadow-sm h-100">
+                            <h4 class="h5 text-success mb-3">Seasonal Services</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ Spring/Fall Cleanups</li>
+                                <li class="mb-2">✓ Leaf Removal</li>
+                                <li class="mb-2">✓ Snow Removal</li>
+                                <li class="mb-2">✓ Gutter Cleaning</li>
+                                <li class="mb-2">✓ Pressure Washing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-sm-6">
+                        <div class="p-3 bg-white rounded-3 shadow-sm h-100">
+                            <h4 class="h5 text-success mb-3">Maintenance & Care</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✓ Mulch Installation</li>
+                                <li class="mb-2">✓ Fertilization Programs</li>
+                                <li class="mb-2">✓ Tree Planting</li>
+                                <li class="mb-2">✓ Pruning/Trimming</li>
+                                <li class="mb-2">✓ Lawn Mowing</li>
+                                <li class="mb-2">✓ Garden Maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5" id="gallery">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-4">Our Work</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div id="galleryCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                          </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="resources/img/carousel/IMG_01.jpg" class="d-block w-100" alt="Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/img/carousel/IMG_02.jpg" class="d-block w-100" alt="Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/img/carousel/IMG_03.jpg" class="d-block w-100" alt="Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/img/carousel/IMG_04.jpg" class="d-block w-100" alt="Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/img/carousel/IMG_05.jpg" class="d-block w-100" alt="Image 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/img/carousel/IMG_06.jpg" class="d-block w-100" alt="Image 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/img/carousel/IMG_07.jpg" class="d-block w-100" alt="Image 7">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/img/carousel/IMG_08.jpg" class="d-block w-100" alt="Image 8">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/img/carousel/IMG_09.jpg" class="d-block w-100" alt="Image 9">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/img/carousel/IMG_10.jpg" class="d-block w-100" alt="Image 10">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" role="button" href="#galleryCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" role="button" href="#galleryCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Section -->
+<section class="py-6 bg-success bg-opacity-10" id="contact">
+    <div class="container">
+        <div class="row g-5 justify-content-center align-items-center">
+            <div class="col-lg-12">
+                <!-- Section Heading -->
+                <h2 class="display-5 fw-bold text-center mb-4">Get In Touch</h2>
+                <p class="lead text-center mb-5">Choose your preferred contact method</p>
+
+                <!-- Contact Options Row -->
+                <div class="row g-5 justify-content-center">
+                    <!-- Phone Card -->
+                    <div class="col-xl-4 col-lg-6 col-md-8 align-self-center">
+                        <div class="p-5 bg-success text-white rounded-4 shadow-lg text-center">
+                            <div class="mb-4">
+                                <i class="fas fa-phone fa-3x mb-3"></i>
+                                <h3 class="h2 mb-3">Direct Contact</h3>
+                                <p class="fs-5 mb-4">Speak directly with our landscaping experts</p>
+                                <div class="d-flex flex-column align-items-center">
+                                    <a href="tel:+14632304660" class="btn btn-light btn-lg px-5 py-3 mb-3 rounded-pill">
+                                        <i class="fas fa-phone me-2"></i>Call Now
+                                    </a>
+                                    <div class="mt-2">
+                                        <p class="h4 mb-1">+1 (463) 230-4660</p>
+                                        <small class="opacity-75">Available Mon-Sat: 8AM - 6PM EST</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vertical Separator (XL screens only) -->
+                    <div class="col-auto d-none d-xl-block">
+                        <div class="vr h-100 mx-auto"></div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="col-xl-7 col-lg-10 col-md-12">
+                        <div class="h-100 p-4 p-md-5 bg-white rounded-4 shadow-lg">
+                            <h3 class="h2 text-center">Send Us a Message</h3>
+                            <form id="contactForm" action="https://submit-form.com/l1ggYiNV7" method="POST" class="p-4 p-md-5 bg-white rounded-3" data-botpoison-public-key="pk_88bacd85-6292-4da5-b86c-ecc7e8aaa44e">
+                                <!-- Formspark hidden fields -->
+                                <input type="hidden" name="_redirect" value="https://edens-landscaping.com/thanks" />
+                                <input type="hidden" name="_append" value="false" />
+                                <div class="row g-3">
+                                    <!-- Honeypot -->
+                                    <div>
+                                        <label for="subject" class="form-label visually-hidden">Subject</label>
+                                        <input type="text" class="form-control form-control-lg hidden-field" name="subject" id="subject"/>
+                                    </div>
+                                    <!-- Actual form -->
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Enter your name here" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" 
+                                        class="form-control form-control-lg" 
+                                        name="phone" 
+                                        id="phone" 
+                                        placeholder="(555) 555-5555" 
+                                        pattern="^\(\d{3}\) \d{3}-\d{4}$"
+                                        required />
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid 10-digit phone number
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="your@email.example" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="find-us" class="form-label">How did you find us?</label>
+                                        <select class="form-control form-control-lg custom-select" name="find-us" id="find-us" required>
+                                            <option value="" disabled selected>Select an option</option>
+                                            <option value="search-engine">Search Engine</option>
+                                            <option value="social-media">Social Media</option>
+                                            <option value="recommendation">Recommendation</option>
+                                            <option value="advertisement">Advertisement</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                      
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control form-control-lg" name="message" id="message" rows="4" placeholder="Enter your message here" required></textarea>
+                                    </div>
+                                    <div class="col-12 text-center mt4">
+                                        <button type="submit" class="btn btn-success btn-lg px-5 py-3" id="sendButton">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark bg-gradient">
+        <footer class="pt-4 pb-2 bg-dark bg-gradient">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#header" class="nav-link px-2 text-light">Home</a></li>
+              <li class="nav-item"><a href="#about-us" class="nav-link px-2 text-light">About Us</a></li>
+              <li class="nav-item"><a href="#services" class="nav-link px-2 text-light">Services</a></li>
+              <li class="nav-item"><a href="#gallery" class="nav-link px-12 text-light">Gallery</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link px-2 text-light">Contact</a></li>
+            </ul>
+            <p class="text-center text-light">Copyright &copy <span id="currentYear"></span> Eden's Landscaping and Gardening</p>
+            <p class="text-center mb-0">
+                <a href="https://github.com/fsantamaria1/" target="_blank">Created by Fredy Santamaria</a>
+            </p>
+          </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/script.js"></script>
+</body>
+</html>
