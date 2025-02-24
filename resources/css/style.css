@@ -92,7 +92,7 @@ footer .nav-link:hover {
 }
 
 #galleryCarousel {
-    max-height: 70vh;
+    height: 70vh;
     background: rgba(0,0,0,0.8);
 }
 
