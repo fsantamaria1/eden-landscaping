@@ -3,6 +3,11 @@
     --secondary-beige: #f4f1ea;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
