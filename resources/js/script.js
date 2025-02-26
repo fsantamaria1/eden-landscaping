@@ -14,6 +14,14 @@ var formElement = document.getElementById("contactForm");
     buttonElement.removeAttribute("disabled");
   });
 
+// Calculate years of experince
+const currentYear = new Date().getFullYear()
+const startYear = 2008;
+const experienceYears = currentYear - startYear;
+
+// Set the years of experience
+document.getElementById("experienceYears").textContent = `${experienceYears}+`;
+
 // Formatting of phone number
 document.getElementById('phone').addEventListener('input', function (e) {
     // Strip non-digit characters
