@@ -20,7 +20,10 @@ const startYear = 2008;
 const experienceYears = currentYear - startYear;
 
 // Set the years of experience
-document.getElementById("experienceYears").textContent = `${experienceYears}+`;
+const experienceYearsElement = document.getElementById("experienceYears");
+if (experienceYearsElement) {
+    experienceYearsElement.textContent = `${experienceYears}+`;
+}
 
 // Formatting of phone number
 document.getElementById('phone').addEventListener('input', function (e) {
@@ -37,6 +40,9 @@ document.getElementById('phone').addEventListener('input', function (e) {
     if (numbers.length > 6) formatted += '-' + numbers.substring(6,10);
     
     this.value = formatted;
+
+    // Plain-language message if the browser blocks submit on an incomplete number
+    this.setCustomValidity(numbers.length === 10 ? '' : 'Please enter a 10-digit phone number.');
     
     // Validation styling
     this.classList.toggle('is-invalid', numbers.length < 10);
