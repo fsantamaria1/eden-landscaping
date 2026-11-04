@@ -20,7 +20,10 @@ const startYear = 2008;
 const experienceYears = currentYear - startYear;
 
 // Set the years of experience
-document.getElementById("experienceYears").textContent = `${experienceYears}+`;
+const experienceYearsElement = document.getElementById("experienceYears");
+if (experienceYearsElement) {
+    experienceYearsElement.textContent = `${experienceYears}+`;
+}
 
 // Formatting of phone number
 document.getElementById('phone').addEventListener('input', function (e) {
@@ -37,8 +40,28 @@ document.getElementById('phone').addEventListener('input', function (e) {
     if (numbers.length > 6) formatted += '-' + numbers.substring(6,10);
     
     this.value = formatted;
+
+    // Plain-language message if the browser blocks submit on an incomplete number
+    this.setCustomValidity(numbers.length === 10 ? '' : 'Please enter a 10-digit phone number.');
     
     // Validation styling
     this.classList.toggle('is-invalid', numbers.length < 10);
     this.classList.toggle('is-valid', numbers.length === 10);
 });
+
+
+// Preselect the service in the quote form when a "Get My Free Quote" button is clicked
+document.querySelectorAll('.quote-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+        document.getElementById('service').value = link.dataset.service;
+    });
+});
+
+// Support ad links like /?service=holiday-lighting
+const serviceParam = new URLSearchParams(window.location.search).get('service');
+if (serviceParam) {
+    const serviceSelect = document.getElementById('service');
+    if ([...serviceSelect.options].some(function (o) { return o.value === serviceParam; })) {
+        serviceSelect.value = serviceParam;
+    }
+}
