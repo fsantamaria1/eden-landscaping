@@ -208,3 +208,28 @@ footer .nav-link:hover {
     background-color: var(--primary-green);
     opacity: 0.25;
 }
+
+/* Service landing sections (Google Ads targets) */
+.service-landing {
+    scroll-margin-top: 56px;
+}
+
+.service-landing .landing-lead {
+    max-width: 720px;
+}
+
+#holiday-lighting .carousel-item img {
+    height: 480px;
+    object-fit: cover;
+}
+
+#holiday-lighting .carousel-control-prev,
+#holiday-lighting .carousel-control-next {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    #holiday-lighting .carousel-item img {
+        height: 300px;
+    }
+}
