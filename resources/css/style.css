@@ -233,3 +233,102 @@ footer .nav-link:hover {
         height: 300px;
     }
 }
+
+
+/* ===== Section backgrounds: alternating pattern =====
+   dark (holiday) > warm cream (fall) > white (about) > beige (services)
+   > white (gallery) > green tint (contact) > dark (footer) */
+:root {
+    --cream-autumn: #fbf4e6;
+    --holiday-night: #0f1f1a;
+}
+
+/* Holiday Lighting: dark night sky with twinkling light dots */
+#holiday-lighting {
+    background-color: var(--holiday-night) !important;
+    background-image:
+        radial-gradient(circle, rgba(255, 214, 102, 0.35) 1.5px, transparent 2px),
+        radial-gradient(circle, rgba(255, 255, 255, 0.18) 1px, transparent 1.5px),
+        linear-gradient(180deg, #0b1713 0%, #14302a 100%) !important;
+    background-size: 60px 60px, 36px 36px, 100% 100% !important;
+    background-position: 0 0, 18px 18px, 0 0 !important;
+}
+
+/* Fall Cleanups: warm cream with a soft diagonal leaf-weave */
+#fall-cleanups {
+    background-color: var(--cream-autumn);
+    background-image:
+        repeating-linear-gradient(45deg, rgba(196, 122, 40, 0.07) 0 2px, transparent 2px 22px),
+        repeating-linear-gradient(-45deg, rgba(196, 122, 40, 0.05) 0 2px, transparent 2px 22px);
+}
+
+/* About: clean white with a faint green dot grid */
+#about-us {
+    background-color: #ffffff;
+    background-image: radial-gradient(circle, rgba(42, 93, 69, 0.10) 1.5px, transparent 2px);
+    background-size: 28px 28px;
+}
+
+/* Services: beige with fine vertical pinstripes */
+#services {
+    margin-top: 0 !important;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+    background-color: var(--secondary-beige) !important;
+    background-image: repeating-linear-gradient(90deg, rgba(42, 93, 69, 0.05) 0 1px, transparent 1px 26px);
+}
+
+/* Gallery: white */
+#gallery {
+    background-color: #ffffff;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+/* Contact: green tint with a light dot pattern */
+#contact {
+    background-color: #e4efe9 !important;
+    background-image: radial-gradient(circle, rgba(42, 93, 69, 0.14) 1.5px, transparent 2px);
+    background-size: 24px 24px;
+}
+
+/* Thin accent line where sections meet */
+section + section {
+    border-top: 1px solid rgba(42, 93, 69, 0.15);
+}
+
+#holiday-lighting + section {
+    border-top: 3px solid #e0a82e;
+}
+
+/* Heading accent bar */
+section h2.display-5::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 4px;
+    margin: 0.85rem auto 0;
+    border-radius: 2px;
+    background: var(--primary-green);
+}
+
+#holiday-lighting h2.display-5::after {
+    background: #ffc83d;
+}
+
+#fall-cleanups h2.display-5::after {
+    background: #c47a28;
+}
+
+/* Services cards read better against the beige */
+#services .card,
+#services .bg-white {
+    box-shadow: 0 4px 14px rgba(42, 93, 69, 0.10) !important;
+}
+
+/* Footer matches the dark holiday section */
+footer,
+.container-fluid.bg-dark {
+    background-color: var(--holiday-night) !important;
+    background-image: none !important;
+}
